@@ -8,6 +8,7 @@
 .blue-text{
             color: blue;
             font-family: lato;
+            background-color: silver;
 
         }
         .red-text{
@@ -30,10 +31,21 @@
             background:url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
         }
         .red-box {
-            background-color: crimson;
+            background-color: #901010;
             color: #fff;
-            padding: 5px;
-            margin: 12xp;
+            padding: 5px;;
+            margin: 5xp;
+            position: relative;
+            bottom: 3px;
+        }
+        
+        p1 {
+            color: #fff;
+            padding: 5px;;
+            margin: 5xp;
+           background-color: rgb(6, 169, 115);
+            position: relative;
+            top: 15px;
         }
 
      
@@ -119,7 +131,7 @@ importing google fonts
                 id attributes should be unique
             </p>
             
-          <h class="red-box">
+          <h >
             Adjust the Padding of an Element
             </h>
             <p class="subtle-Pattern">
@@ -130,7 +142,7 @@ importing google fonts
                  padding controls the amount of space between 
                  the element's content and its borde
             </p> 
-            <h class="red-box">
+            <h>
                 Adjust the Margin of an Element
                 </h>
                 <p class="subtle-Pattern">
@@ -138,4 +150,57 @@ importing google fonts
                      it will increase the distance between its border
                       and surrounding elements.
                 </p>    
+            </p> 
+            <h class="red-box">
+                Use Hex Code for Specific Colors
+                </h>
+                <p class="subtle-Pattern">
+                    the symbols 0-9 represent the values zero to nine. Then A,B,C,D,E,F
+                     represent the values ten to fifteen. Altogethe
+                    In CSS, we can use 6 hexadecimal digits to represent colors, 
+                    two each for the red (R), green (G), and blue (B) components.
+                     For example, #000000 is black and is also the lowest possible 
+                     value.
+                     The digit F is the highest number in hex code, 
+                     and represents the maximum possible brightness.
+                </p> 
+                
+                <h class="red-box">
+                    position of an element
+                    </h>
+                    <p1 class="p1">
+                        When the position of an element is set to relative, 
+                        it allows you to specify how CSS should move it relative
+                        to its current position in the normal flow of the page. 
+                        It pairs with the CSS offset properties of left or right,
+                         and top or bottom. These say how many pixels, percentages,
+                          or ems to move the item away from where it is normally positioned. 
+                        The following example moves the paragraph 10 pixels
+                         away from the bottom:
+                         The next option for the CSS position property is absolute,
+                          which locks the element in place relative to its parent 
+                          container. Unlike the relative position, 
+                          this removes the element from the normal
+                           flow of the document, so surrounding
+                            items ignore it. The CSS offset properties 
+                            (top or bottom and left or right) are used to adjust 
+                            the position.
+                        One nuance with absolute positioning is that it will be locked 
+                        relative to its closest positioned ancestor. If you forget to add
+                        a position rule to the parent item, 
+                        (this is typically done using position: relative;), 
+                        the browser will keep 
+                        looking up the chain and ultimately default to the body tag.
+                        The next layout scheme that CSS offers is the fixed position, 
+                        which is a type of absolute positioning that locks an element
+                         relative to the browser window. Similar to absolute positioning,
+                          it's used with the CSS offset properties and also removes 
+                          the element from the normal flow of the document.
+                           Other items no longer "realize" where it is positioned,
+                            which may require some layout adjustments elsewhere.
+                        One key difference between the fixed and absolute positions
+                         is that an element with a fixed position won't move when 
+                         the user scrolls.
+                    </p1> 
+
 </html>
