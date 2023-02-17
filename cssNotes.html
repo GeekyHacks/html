@@ -1,230 +1,194 @@
 <!DOCTYPE html>
 <html>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap"
+    rel="stylesheet"
+    type="text/css"
+  />
 
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet"type="text/css">
+  <style>
+    .blue-text {
+      color: blue;
+      font-family: lato;
+      background-color: silver;
+    }
+    .red-text {
+      color: red;
 
-    <style>
+      font-size: 50px;
+      font-weight: bold;
+      font-family: Arial;
+    }
+    h1 {
+      color: red;
+    }
+    p {
+      color: blue;
+    }
+    .silver-background {
+      background-color: silver;
+    }
+    .subtle-Pattern {
+      background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+    }
+    .red-box {
+      background-color: #901010;
+      color: #fff;
 
-.blue-text{
-            color: blue;
-            font-family: lato;
-            background-color: silver;
+      position: relative;
+      bottom: 1px;
+    }
 
-        }
-        .red-text{
-            color: red;
-          
-            font-size: 50px;
-            font-weight: bold;
-            font-family: Arial;
-        }
-         h1 {
-           color: red;
-         }
-         p {
-           color: blue;
-         }
-        .silver-background{
-            background-color: silver;
-        }
-        .subtle-Pattern{
-            background:url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
-        }
-        .red-box {
-            background-color: #901010;
-            color: #fff;
-        
-            position: relative;
-            bottom: 1px;
-        }
-        
-        p1 {
-            color: #fff;
-            padding: 1px;
-            margin: 1p;
-           background-color: rgb(6, 169, 115);
-            position: relative;
-        }
+    p1 {
+      color: #fff;
+      padding: 1px;
+      margin: 1p;
+      background-color: rgb(6, 169, 115);
+      position: relative;
+    }
+  </style>
+  <head>
+    Notes about HTML & CSS
+  </head>
 
-       </style>
-<head>
-Notes about HTML & CSS
-
-</head>
-
-<body>
-  
-    <h1 class="red-text">
-        CSS Styling
-    </h1>
-<p>
-    create a style block; Note that it's important
-    to have both opening and closing curly braces
-    ({ and }) around each element's style rule(s).
-    You also need to make sure that your element's
-    style definition is between the opening and 
-    closing style tags. Finally, be sure to add 
-    a semicolon to the end of each of your element's
-    style rules.
-</p>
-<h >
-    CSS Styling
-</h>
-<p>
-    You can apply a class to an HTML element like 
-    this: h2 class="blue-text" CSS Styling /h2.
-     Note that in your CSS style element, 
-     class names start with a period. In your HTML
-      elements' class attribute,
-     the class name does not include the period.
-</p>
-<h class="blue-text">
-importing google fonts
-</h>
-<p class="blue-text">
-    To import a Google Font, you can copy the font's URL 
-    from the Google Fonts library and then paste it in your HTML. 
-    For this challenge, we'll import the Lobster font. To do this, 
-    copy the following code snippet 
-    and paste it into the top of your code editor 
-    (before the opening style element 
-    you need to mention the type at the end of link 
-</p>
-
-<h class="blue-text">
-    importing google fonts
-    </h>
-    <p class="silver-background">
-        To import a Google Font, you can copy the font's URL 
-        from the Google Fonts library and then paste it in your HTML. 
-        For this challenge, we'll import the Lobster font. To do this, 
-        copy the following code snippet 
-        and paste it into the top of your code editor 
-        (before the opening style element 
-        you need to mention the type at the end of link 
+  <body>
+    <h1 class="red-text">CSS Styling</h1>
+    <p>
+      create a style block; Note that it's important to have both opening and
+      closing curly braces ({ and }) around each element's style rule(s). You
+      also need to make sure that your element's style definition is between the
+      opening and closing style tags. Finally, be sure to add a semicolon to the
+      end of each of your element's style rules.
+    </p>
+    <h> CSS Styling </h>
+    <p>
+      You can apply a class to an HTML element like this: h2 class="blue-text"
+      CSS Styling /h2. Note that in your CSS style element, class names start
+      with a period. In your HTML elements' class attribute, the class name does
+      not include the period.
+    </p>
+    <h class="blue-text"> importing google fonts </h>
+    <p class="blue-text">
+      To import a Google Font, you can copy the font's URL from the Google Fonts
+      library and then paste it in your HTML. For this challenge, we'll import
+      the Lobster font. To do this, copy the following code snippet and paste it
+      into the top of your code editor (before the opening style element you
+      need to mention the type at the end of link
     </p>
 
-    <h class="blue-text">
-        Adding a Subtle Pattern as a Background Image
-        </h>
-        <p class="subtle-Pattern">
-            To import a Google Font, you can copy the font's URL 
-            from the Google Fonts library and then paste it in your HTML. 
-            For this challenge, we'll import the Lobster font. To do this, 
-            copy the following code snippet 
-            and paste it into the top of your code editor 
-            (before the opening style element 
-            you need to mention the type at the end of link 
-        </p>
-        <h id="element-id">
-            Set the id of an Element
-            </h>
-            <p class="subtle-Pattern">
-                HTML element can also have an id attribute.
-                There are several benefits to using id attributes:
-                You can use an id to style a single element and later 
-                you'll learn that you can use them to select and modify 
-                specific elements with JavaScript.
-                id attributes should be unique
-            </p>
-            
-          <h >
-            Adjust the Padding of an Element
-            </h>
-            <p class="subtle-Pattern">
-                specifying an element's padding-top, padding-right,
-                 padding-bottom, and padding-left like this (padding: 10px 20px 10px 20px;)
-                Three important properties control the space that
-                 surrounds each HTML element: padding, border, and margin
-                 padding controls the amount of space between 
-                 the element's content and its borde
-            </p> 
-            <h>
-                Adjust the Margin of an Element
-                </h>
-                <p class="subtle-Pattern">
-                    When you increase the blue box's margin,
-                     it will increase the distance between its border
-                      and surrounding elements.
-                </p>    
-           
-            <h class="red-box">
-                Use Hex Code for Specific Colors
-                </h>
-                <p class="subtle-Pattern">
-                    the symbols 0-9 represent the values zero to nine. Then A,B,C,D,E,F
-                     represent the values ten to fifteen. Altogethe
-                    In CSS, we can use 6 hexadecimal digits to represent colors, 
-                    two each for the red (R), green (G), and blue (B) components.
-                     For example, #000000 is black and is also the lowest possible 
-                     value.
-                     The digit F is the highest number in hex code, 
-                     and represents the maximum possible brightness.
-                </p> 
-                
-                <h class="red-box">
-                    position of an element
-                    </h>
-                    <p1 class="p1">
-                        When the position of an element is set to relative, 
-                        it allows you to specify how CSS should move it relative
-                        to its current position in the normal flow of the page. 
-                        It pairs with the CSS offset properties of left or right,
-                         and top or bottom. These say how many pixels, percentages,
-                          or ems to move the item away from where it is normally positioned. 
-                        The following example moves the paragraph 10 pixels
-                         away from the bottom:
-                         The next option for the CSS position property is absolute,
-                          which locks the element in place relative to its parent 
-                          container. Unlike the relative position, 
-                          this removes the element from the normal
-                           flow of the document, so surrounding
-                            items ignore it. The CSS offset properties 
-                            (top or bottom and left or right) are used to adjust 
-                            the position.
-                        One nuance with absolute positioning is that it will be locked 
-                        relative to its closest positioned ancestor. If you forget to add
-                        a position rule to the parent item, 
-                        (this is typically done using position: relative;), 
-                        the browser will keep 
-                        looking up the chain and ultimately default to the body tag.
-                        The next layout scheme that CSS offers is the fixed position, 
-                        which is a type of absolute positioning that locks an element
-                         relative to the browser window. Similar to absolute positioning,
-                          it's used with the CSS offset properties and also removes 
-                          the element from the normal flow of the document.
-                           Other items no longer "realize" where it is positioned,
-                            which may require some layout adjustments elsewhere.
-                        One key difference between the fixed and absolute positions
-                         is that an element with a fixed position won't move when 
-                         the user scrolls.
-                    </p1> 
+    <h class="blue-text"> importing google fonts </h>
+    <p class="silver-background">
+      To import a Google Font, you can copy the font's URL from the Google Fonts
+      library and then paste it in your HTML. For this challenge, we'll import
+      the Lobster font. To do this, copy the following code snippet and paste it
+      into the top of your code editor (before the opening style element you
+      need to mention the type at the end of link
+    </p>
 
-                   
-     <h class="red-box" >
-     float Propert & Overlapping
-      </h>
-                        <p class="subtle-Pattern">
-                       The next positioning tool does not actually use position,
-                       but sets the float property of an element. Floating elements
-                     are removed from the normal flow of a document and pushed 
-                     to either the left or right of their containing parent element. 
-                      It's commonly used with the width property to specify how much
-                     horizontal space the floated element requires.
-                     means you need to have width property to enable it in this way;
-                     float: right;
-                     width: 40%;
+    <h class="blue-text"> Adding a Subtle Pattern as a Background Image </h>
+    <p class="subtle-Pattern">
+      To import a Google Font, you can copy the font's URL from the Google Fonts
+      library and then paste it in your HTML. For this challenge, we'll import
+      the Lobster font. To do this, copy the following code snippet and paste it
+      into the top of your code editor (before the opening style element you
+      need to mention the type at the end of link
+    </p>
+    <h id="element-id"> Set the id of an Element </h>
+    <p class="subtle-Pattern">
+      HTML element can also have an id attribute. There are several benefits to
+      using id attributes: You can use an id to style a single element and later
+      you'll learn that you can use them to select and modify specific elements
+      with JavaScript. id attributes should be unique
+    </p>
 
-                     When elements are positioned to overlap 
-                     (i.e. using position: absolute | relative | fixed | sticky), 
-                     the element coming later in the HTML markup will, by default, 
-                     appear on the top of the other elements. However, the z-index 
-                     property can specify the order of how elements are stacked
-                      on top of one another. It must be an integer 
-                      (i.e. a whole number and not a decimal), and higher values 
-                      for the z-index property of an element move it 
-                     higher in the stack than those with lower values.
-                    </p> 
+    <h> Adjust the Padding of an Element </h>
+    <p class="subtle-Pattern">
+      specifying an element's padding-top, padding-right, padding-bottom, and
+      padding-left like this (padding: 10px 20px 10px 20px;) Three important
+      properties control the space that surrounds each HTML element: padding,
+      border, and margin padding controls the amount of space between the
+      element's content and its borde
+    </p>
+    <h> Adjust the Margin of an Element </h>
+    <p class="subtle-Pattern">
+      When you increase the blue box's margin, it will increase the distance
+      between its border and surrounding elements.
+    </p>
 
-</body>                   
+    <h class="red-box"> Use Hex Code for Specific Colors </h>
+    <p class="subtle-Pattern">
+      the symbols 0-9 represent the values zero to nine. Then A,B,C,D,E,F
+      represent the values ten to fifteen. Altogethe In CSS, we can use 6
+      hexadecimal digits to represent colors, two each for the red (R), green
+      (G), and blue (B) components. For example, #000000 is black and is also
+      the lowest possible value. The digit F is the highest number in hex code,
+      and represents the maximum possible brightness.
+    </p>
+
+    <h class="red-box"> position of an element </h>
+    <p1 class="p1">
+      When the position of an element is set to relative, it allows you to
+      specify how CSS should move it relative to its current position in the
+      normal flow of the page. It pairs with the CSS offset properties of left
+      or right, and top or bottom. These say how many pixels, percentages, or
+      ems to move the item away from where it is normally positioned. The
+      following example moves the paragraph 10 pixels away from the bottom: The
+      next option for the CSS position property is absolute, which locks the
+      element in place relative to its parent container. Unlike the relative
+      position, this removes the element from the normal flow of the document,
+      so surrounding items ignore it. The CSS offset properties (top or bottom
+      and left or right) are used to adjust the position. One nuance with
+      absolute positioning is that it will be locked relative to its closest
+      positioned ancestor. If you forget to add a position rule to the parent
+      item, (this is typically done using position: relative;), the browser will
+      keep looking up the chain and ultimately default to the body tag. The next
+      layout scheme that CSS offers is the fixed position, which is a type of
+      absolute positioning that locks an element relative to the browser window.
+      Similar to absolute positioning, it's used with the CSS offset properties
+      and also removes the element from the normal flow of the document. Other
+      items no longer "realize" where it is positioned, which may require some
+      layout adjustments elsewhere. One key difference between the fixed and
+      absolute positions is that an element with a fixed position won't move
+      when the user scrolls.
+    </p1>
+
+    <h class="red-box"> float Propert & Overlapping </h>
+    <p class="subtle-Pattern">
+      The next positioning tool does not actually use position, but sets the
+      float property of an element. Floating elements are removed from the
+      normal flow of a document and pushed to either the left or right of their
+      containing parent element. It's commonly used with the width property to
+      specify how much horizontal space the floated element requires. means you
+      need to have width property to enable it in this way; float: right; width:
+      40%; When elements are positioned to overlap (i.e. using position:
+      absolute | relative | fixed | sticky), the element coming later in the
+      HTML markup will, by default, appear on the top of the other elements.
+      However, the z-index property can specify the order of how elements are
+      stacked on top of one another. It must be an integer (i.e. a whole number
+      and not a decimal), and higher values for the z-index property of an
+      element move it higher in the stack than those with lower values.
+    </p>
+
+    <h class="red-box"> General Notes </h>
+    <p class="subtle-Pattern">
+<ol>
+<li>
+    An ID selector begins with a # rather than a dot character
+    , but is used in the same way as a class selector. 
+    However, an ID can be used only once per page, 
+    and elements can only have a single id value applied to
+     them.
+    
+</li>
+<li>
+    <a href=""> this is used to show wahts in the link</a>
+</li>
+
+
+
+
+
+</ol>
+    </p>
+  </body>
 </html>
